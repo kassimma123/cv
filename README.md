@@ -1,73 +1,62 @@
-# React + TypeScript + Vite
+# ⚡ Katarzyna Piskorz | Portfolio & Projects
+### Computer Science Student @ AGH University of Science and Technology
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my repository! This profile showcases a blend of my work – ranging from interactive web applications and evolutionary simulations to robust database systems and automation tools.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🖥️ Featured Project: Digital Bento Portfolio
+**Stack:** React 18, TypeScript, Tailwind CSS, Framer Motion, Lucide Icons
 
-## React Compiler
+A personal digital showcase designed with a **Bento Grid** aesthetic, featuring neo-brutalist and cyberpunk design elements.
+* **Interactivity:** Cursor-tracking "flashlight" effect and 3D parallax tilt on project cards.
+* **UI/UX:** Custom SVG noise (grain) filters, glitch animations, and smooth scroll-reveal transitions.
+* **Responsiveness:** Fully dynamic layout optimized for mobile, tablet, and desktop screens.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Selected Engineering Projects
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎬 Retro VHS Web Platform
+*A full-stack movie reservation platform with a nostalgic 80s/90s aesthetic.*
+* **Tech:** React, TypeScript, JWT, REST API.
+* **Key Features:** Secure authentication with refresh token rotation, dynamic shopping cart, interactive review module, and server-side validation.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🌿 Darwin World Ecosystem Sim
+*A sophisticated evolutionary simulation based on advanced OOP design patterns.*
+* **Tech:** Java, JavaFX.
+* **Key Features:** Genetic algorithms (reproduction, mutation), real-time population statistics visualization, and a unique "FOMO" spatial algorithm simulating crowd-following behaviors.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🗄️ ERP Furniture Manufacturing Database
+*A comprehensive relational database system for managing large-scale production.*
+* **Tech:** SQL Server, T-SQL (3NF Normalization).
+* **Key Features:** Implemented over 20 data integrity constraints (CHECK, UNIQUE), modeled complex business processes (HR, Warehouse, Production), and engineered advanced analytical queries.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🐍 System Utilities & Automation
+*A suite of tools designed to enhance system observability and developer workflow.*
+* **Tech:** Python, Bash.
+* **Key Features:** Log Parsers for rapid root-cause debugging, automated backup scripts, and data scraping tools for database population and normalization.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 📐 Differential Equation Solver
+*A technical computing tool for numerical analysis and mathematics.*
+* **Tech:** Python, NumPy, SciPy.
+* **Key Features:** Numerical solvers for complex differential and difference equations with integrated data visualization.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🛠️ Skills & Tech Stack
+
+| Category | Technologies |
+| :--- | :--- |
+| **Languages** | Python, Java, SQL, Bash, PHP, TypeScript, C |
+| **Frontend** | React, Tailwind CSS, Framer Motion, JavaFX |
+| **Data & Systems** | PostgreSQL, MySQL, MS SQL Server, UNIX/Linux |
+| **Tools** | Git, Docker (basics), CI/CD, API Testing |
+
+---
+
+## 📫 Contact & Links
+
+* **Email:** [kassimma@icloud.com](mailto:kassimma@icloud.com)
+* **Location:** Kraków, Poland
+* **GitHub:** [github.com/kassimma123](https://github.com/kassimma123)
