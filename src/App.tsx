@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import Marquee from "react-fast-marquee";
 import Tilt from 'react-parallax-tilt';
-import { Mail, Phone, MapPin, Github, Terminal, Database, Server, Cpu, Globe, ArrowUpRight, Calculator } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Terminal, Database, Cpu, Globe, ArrowUpRight, Calculator } from 'lucide-react';
 import idCardImg from './assets/student_id.png';
 
 export default function App() {
