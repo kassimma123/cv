@@ -249,10 +249,10 @@ export default function App() {
                                         <div className="h-px bg-zinc-800 flex-1"></div>
                                     </div>
                                     <div className="flex flex-wrap gap-1.5">
-                                        {['SQL', 'Node.js', 'APIs', 'Postman', 'UNIX', 'Bash'].map(skill => (
+                                        {['SQL', 'Node.js', 'APIs', 'Postman', 'UNIX', 'Bash', 'Docker'].map(skill => (
                                             <span key={skill} className="text-[11px] text-emerald-400 bg-zinc-900 border border-zinc-800 px-2 py-1 rounded-sm hover:border-emerald-400 hover:bg-emerald-400 hover:text-black transition-all cursor-crosshair">
-                                                {skill}
-                                            </span>
+                {skill}
+            </span>
                                         ))}
                                     </div>
                                 </div>
