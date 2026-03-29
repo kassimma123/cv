@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import type { Variants } from 'framer-motion';
 import Marquee from "react-fast-marquee";
 import Tilt from 'react-parallax-tilt';
-import { Mail, Phone, MapPin, Github, Terminal, Database, Cpu, Globe, ArrowUpRight, Calculator } from 'lucide-react';
+import { Mail, Phone, MapPin, Github, Terminal, Database, Cpu, Globe, ArrowUpRight, Calculator, Trophy } from 'lucide-react';
 import idCardImg from './assets/student_id.png';
 
 export default function App() {
@@ -41,6 +41,7 @@ export default function App() {
             />
         </div>
     );
+
 
     return (
         <div className="relative min-h-screen bg-[#09090b] text-zinc-300 p-4 md:p-8 font-sans selection:bg-lime-400 selection:text-black pb-40 overflow-hidden">
@@ -110,16 +111,31 @@ export default function App() {
                 {/* --- 2. SUMMARY --- */}
                 <motion.div variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} className="md:col-span-2 z-10">
                     <Tilt perspective={800} tiltMaxAngleX={8} tiltMaxAngleY={8} glareEnable={true} glareMaxOpacity={0.06} scale={1.04} transitionSpeed={1500} className="h-full">
-                        <div className="h-full bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-800/60 transition-colors backdrop-blur-sm group">
+                        <div className="h-full bg-zinc-900/40 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-800/60 transition-colors backdrop-blur-sm group flex flex-col justify-center">
                             <div className="flex justify-between items-center mb-6">
                                 <h2 className="text-xs font-bold uppercase tracking-widest text-zinc-500">About me</h2>
                                 <Cpu className="text-zinc-700 group-hover:text-lime-400 transition-colors" size={24} />
                             </div>
-                            <p className="text-base md:text-xl leading-relaxed text-zinc-100 font-light">
-                                Software Engineer focused on backend architecture and <span className="text-lime-400 font-medium bg-lime-400/20 px-1.5 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors">system reliability</span>.
-                                Passionate about <span className="text-lime-400 font-medium bg-lime-400/20 px-1.5 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors">automation</span>,
-                                infrastructure health, and optimizing developer workflows. Experienced in managing normalized databases and building proactive tooling
-                                to reduce operational complexity and streamline <span className="text-lime-400 font-medium bg-lime-400/20 px-1.5 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors">incident resolution</span>.
+
+                            <p className="text-base md:text-[19px] leading-relaxed text-zinc-300 font-light">
+                                I’m a Computer Science student who genuinely enjoys figuring out how things work under the hood.
+                                Whether it's designing{' '}
+                                <span className="box-decoration-clone text-lime-400 font-bold bg-lime-500/10 border border-lime-500/20 px-2 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors duration-300">
+                                    clean backend logic
+                                </span>
+                                , playing around with data, or building something totally out of the box.
+                            </p>
+
+                            <p className="text-base md:text-[19px] leading-relaxed text-zinc-300 font-light mt-4">
+                                I thrive in fast-paced environments—which probably explains why I love{' '}
+                                <span className="box-decoration-clone text-lime-400 font-bold bg-lime-500/10 border border-lime-500/20 px-2 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors duration-300">
+                                    hackathons
+                                </span>
+                                {' '}and tackling{' '}
+                                <span className="box-decoration-clone text-lime-400 font-bold bg-lime-500/10 border border-lime-500/20 px-2 py-0.5 rounded group-hover:bg-lime-400 group-hover:text-black transition-colors duration-300">
+                                    complex challenges
+                                </span>
+                                {' '}under pressure. I'm always looking for the next problem to solve and the next tech stack to break (and fix).
                             </p>
                         </div>
                     </Tilt>
@@ -264,12 +280,83 @@ export default function App() {
                     </Tilt>
                 </motion.div>
 
+
                 {/* --- PRZERWA NA WYMUSZENIE SCROLLA --- */}
                 <motion.div variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true }} className="md:col-span-4 mt-16 mb-4 flex items-end gap-4 z-10">
                     <h2 className="text-5xl font-black text-white tracking-tighter uppercase">Selected Projects</h2>
                     <div className="h-[2px] flex-1 bg-gradient-to-r from-zinc-800 to-transparent mb-3"></div>
                 </motion.div>
 
+                {/* --- HACKATHON WINNER: PING MULTIDIMENSIONAL (CLASSY EDITION FIXED) --- */}
+                <motion.div variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="md:col-span-2 z-10">
+                    <Tilt perspective={800} tiltMaxAngleX={4} tiltMaxAngleY={4} glareEnable={true} glareMaxOpacity={0.1} glareColor="#facc15" scale={1.02} transitionSpeed={1500} className="h-full">
+                        <a href="https://github.com/pawelmalkowski4/ping" target="_blank" rel="noopener noreferrer" className="block h-full bg-zinc-900 border border-zinc-800 rounded-3xl p-8 relative group overflow-hidden cursor-pointer hover:border-yellow-500/30 transition-colors">
+
+                            {/* Subtelny złoty gradient w tle */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-yellow-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-0"></div>
+
+                            {/* Poprawiona Minimalistyczna Paletka do Ping-Ponga (SVG) */}
+                            {/* Zmiana: viewBox na "-20 -20 140 140" daje bufor na animację, bottom zmienione na -5 */}
+                            <div className="absolute -bottom-5 -right-5 w-48 h-48 rotate-12 group-hover:-rotate-6 transition-transform duration-700 z-0 opacity-[0.15] group-hover:opacity-30 pointer-events-none">
+                                <svg viewBox="-20 -20 140 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    {/* Rączka */}
+                                    <rect x="42" y="55" width="16" height="40" rx="4" fill="#52525b" />
+                                    {/* Guma/Główka paletki */}
+                                    <ellipse cx="50" cy="40" rx="32" ry="38" fill="#facc15" />
+                                    {/* Lewitująca piłeczka - Zmieniony zakres 'y' żeby nie uciekała za krawędź */}
+                                    <motion.circle
+                                        animate={{ y: [0, -25, 0], x: [0, -5, 0] }}
+                                        transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                                        cx="20" cy="15" r="8" fill="#ffffff"
+                                    />
+                                </svg>
+                            </div>
+
+                            <div className="relative z-10 flex flex-col h-full justify-between">
+                                <div>
+                                    <div className="flex justify-between items-start mb-5">
+                                        {/* Elegancka odznaka */}
+                                        <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/20 text-yellow-500/90 shadow-sm">
+                                            <Trophy size={12} />
+                                            <span className="text-[9px] font-bold uppercase tracking-widest">Special Recognition</span>
+                                        </div>
+                                        <div className="w-10 h-10 rounded-full border border-zinc-700 flex items-center justify-center group-hover:bg-yellow-500 group-hover:border-yellow-500 transition-all">
+                                            <ArrowUpRight className="text-zinc-500 group-hover:text-black transition-colors" size={18} />
+                                        </div>
+                                    </div>
+
+                                    <h3 className="text-2xl font-bold text-white mb-3">PING - game</h3>
+
+                                    <div className="text-sm text-zinc-400 mb-6 leading-relaxed space-y-3">
+                                        <p>
+                                            We had the amazing opportunity to participate in the{' '}
+                                            <span className="box-decoration-clone text-yellow-400 font-bold bg-yellow-500/10 border border-yellow-500/20 px-2 py-0.5 rounded group-hover:bg-yellow-400 group-hover:text-black transition-colors duration-300">
+        Software Mansion x Gemini Hackathon
+    </span>
+                                            , where our project won the Special Recognition award!
+                                        </p>
+                                        <p className="font-light italic text-zinc-300 border-l border-yellow-500/30 pl-3">
+                                            A 3D table tennis game you play simply by moving your hands in front of the screen.
+                                        </p>
+                                        <ul className="list-none space-y-1 mt-2 pt-2 border-t border-zinc-800/50">
+                                            <li className="text-xs"><span className="text-zinc-500 font-mono">TRACKING:</span> Precise, real-time hand tracking via MediaPipe</li>
+                                            <li className="text-xs"><span className="text-zinc-500 font-mono">AI LOGIC:</span> Gemini API acts as a dynamic live commentator</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                {/* Tagi */}
+                                <div className="flex flex-wrap gap-2">
+                                    {['React Three Fiber', 'MediaPipe', 'Gemini API'].map(tag => (
+                                        <span key={tag} className="text-xs text-yellow-500/60 font-mono bg-yellow-500/5 border border-yellow-500/10 px-2.5 py-1 rounded group-hover:border-yellow-500/30 group-hover:text-yellow-500 transition-colors">
+                                            #{tag.replace(/\s+/g, '')}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </a>
+                    </Tilt>
+                </motion.div>
                 {/* --- PROJECT 1: Retro Web App --- */}
                 <motion.div variants={itemVariants} initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} className="md:col-span-2 z-10">
                     <Tilt perspective={800} tiltMaxAngleX={6} tiltMaxAngleY={6} glareEnable={true} glareMaxOpacity={0.15} glareColor="#f97316" scale={1.04} transitionSpeed={1500} className="h-full">
